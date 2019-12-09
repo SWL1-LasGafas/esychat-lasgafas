@@ -77,7 +77,7 @@ export class ChatHistoryComponent implements DoCheck {
               }
               else if (response[i].nickname == '')
               {
-                // Faktisch gar nichts machen
+                // Faktisch gar nichts machen. Es wird davon ausgegangen, dass das Systemmesseges sind, die wir hier nicht verändern
               }
               else {
                 response[i].position = "left";
