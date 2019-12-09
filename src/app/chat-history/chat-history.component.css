@@ -44,13 +44,13 @@
     margin-right: 50px;
     text-decoration:bold;
     font-size: 17pt;
-    color: limegreen;
+    color: brown;
 }
 .nick1 {
     margin-right: 50px;
     text-decoration:bold;
     font-size: 17pt;
-    color: yellow;
+    color: turquoise;
 }
 .nick2 {
     margin-right: 50px;
@@ -74,7 +74,7 @@
     margin-right: 50px;
     text-decoration:bold;
     font-size: 17pt;
-    color:pink;
+    color: limegreen;
 }
 .nick6 {
     margin-right: 50px;
@@ -104,13 +104,14 @@
     margin-right: 50px;
     text-decoration:bold;
     font-size: 17pt;
-    color: goldenrod;
+    color: darkkhaki;
 }
 
 
 .tstamp {
     font-size: 10pt;
     font-family: cursive;
+    color: grey;
 }
 
 /*
@@ -136,23 +137,44 @@
 .left {
     float: left;
     color: black;
-    background-color: #e7ebeb;
+    background-color: rgba(230, 77, 17, 0.1);
     border: 1px solid black;
     border-radius: 5px;
-    padding: 20px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
     max-width: 60%;
+    min-width: 33%;
     word-wrap:break-word;
 }
 
 .right {
     float: right;
     color: black;
-    background-color: rgb(200, 65, 40);
+    background-color: rgba(230, 77, 17, 0.5);
     border: 1px solid black;
     border-radius: 5px;
-    padding: 20px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
     max-width: 60%;
+    min-width: 33%;
     word-wrap:break-word;
+}
+
+.sysmsg {
+    float: left;
+    position: relative;
+    left: 30%;
+    color: black;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
 }
 
 /* Rote scrollbar */
