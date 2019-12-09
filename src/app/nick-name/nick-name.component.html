@@ -1,0 +1,8 @@
+<div id="nickNameTitle">
+    <p>Setzen Sie einen Nickname!</p>
+</div>
+<input [(ngModel)]="nickName" type="text" id="inputNickname" minlenght=4 maxlength="10"
+    (keyup.enter)="setNickname()" required />&nbsp;
+<button type="button" id="nickNameButton" class="btn btn-outline-danger btn-large" (click)="setNickname()" value="Setzen"
+    [disabled]="!nickName">Setzen</button>
+<br />

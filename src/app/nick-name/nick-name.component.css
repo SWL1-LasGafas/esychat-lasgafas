@@ -1,0 +1,24 @@
+
+#nickNameTitle {
+    position: relative;
+    top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#inputNickname {
+
+    position: relative;
+    top: 35px;
+
+    width: 90%;
+    height: 40px;
+    color: black;
+    background-color: #f8f9fa;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#nickNameButton {
+    position: relative;
+    top: 50px;
+}

@@ -1,0 +1,179 @@
+#chatarea {
+    position: relative;
+    top: 20px;
+}
+
+#myForm {
+    position: relative;
+
+    color: black;
+    background-color: #f8f9fa;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 430px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: scroll;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+@media (max-height: 700px) {
+    #myForm {
+        height: 340px;
+        width: 100%;
+    }
+}
+
+@media (max-height: 615px) {
+    #myForm {
+        height: 260px;
+        width: 100%;
+    }
+}
+
+@media (max-height: 500px) {
+    #myForm {
+        height: 190px;
+        width: 100%;
+    }
+}
+
+/* Chat-Message */
+.myNick {
+    margin-right: 50px;
+    text-decoration:bold;
+    font-size: 17pt;
+    color: limegreen;
+}
+.nick1 {
+    margin-right: 50px;
+    text-decoration:bold;
+    font-size: 17pt;
+    color: yellow;
+}
+.nick2 {
+    margin-right: 50px;
+    text-decoration:bold;
+    font-size: 17pt;
+    color:darkblue;
+}
+.nick3 {
+    margin-right: 50px;
+    text-decoration:bold;
+    font-size: 17pt;
+    color: violet;
+}
+.nick4 {
+    margin-right: 50px;
+    text-decoration:bold;
+    font-size: 17pt;
+    color: skyblue;
+}
+.nick5 {
+    margin-right: 50px;
+    text-decoration:bold;
+    font-size: 17pt;
+    color:pink;
+}
+.nick6 {
+    margin-right: 50px;
+    text-decoration:bold;
+    font-size: 17pt;
+    color: tomato;
+}
+.nick7 {
+    margin-right: 50px;
+    text-decoration:bold;
+    font-size: 17pt;
+    color:olive;
+}
+.nick8 {
+    margin-right: 50px;
+    text-decoration:bold;
+    font-size: 17pt;
+    color: orange;
+}
+.nick9 {
+    margin-right: 50px;
+    text-decoration:bold;
+    font-size: 17pt;
+    color: darkviolet;
+}
+.nick0 {
+    margin-right: 50px;
+    text-decoration:bold;
+    font-size: 17pt;
+    color: goldenrod;
+}
+
+
+.tstamp {
+    font-size: 10pt;
+    font-family: cursive;
+}
+
+/*
+
+.left {
+    text-align:left;
+    color: black;
+    background-color: rgba(200, 65, 40, 1);
+    border: 1px solid rgb(200, 65, 40);
+    border-radius: 5px;
+}
+
+.right {
+    text-align:right;
+    color: black;
+    background-color: green;
+    border: 1px solid rgb(200, 65, 40);
+    border-radius: 5px;
+}
+
+*/
+
+.left {
+    float: left;
+    color: black;
+    background-color: #e7ebeb;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 60%;
+    word-wrap:break-word;
+}
+
+.right {
+    float: right;
+    color: black;
+    background-color: rgb(200, 65, 40);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 60%;
+    word-wrap:break-word;
+}
+
+/* Rote scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #C84128; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #C84128; 
+  }

@@ -1,0 +1,146 @@
+
+.container-fluid {
+
+    position: fixed;
+    top: 130px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+#mainchatbereich {
+
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 530px;    
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-top: 2px solid rgb(00, 00, 00);
+    border-left: 2px solid rgb(00, 00, 00);
+    border-right: 2px solid rgb(00, 00, 00);
+    border-bottom: 2px solid black;
+    background-color: rgba(200, 65, 40, 1);
+
+}
+
+#mainlinks {
+
+    color: black;
+    background-color: white;
+
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+
+}
+
+/*
+#mainrechts {
+
+    color: black;
+    background-color: white;
+
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+*/
+
+#chatausgabe {
+
+    position: relative;
+    top: 10px;
+    color: white;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#errorMessage {
+    position: relative;
+    top: 60px;
+    color: rgba(200, 65, 40, 1);
+    font-size: 15px;
+}
+
+#werbung {
+    position: relative;
+    top: 30%;
+    height: 30%;
+    width: 100%;
+}
+
+@media (max-height: 700px) {
+
+    .container-fluid {
+        position: fixed;
+        top: 130px;
+    }
+
+    #mainchatbereich {
+
+        position: relative;
+        top: 0px;
+        width: 100%;
+        height: 430px;   
+    }
+
+}
+
+@media (max-height: 615px) {
+
+    .container-fluid {
+        position: fixed;
+        top: 130px;
+    }
+
+    #mainchatbereich {
+
+        position: relative;
+        top: 0px;
+        height: 340px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .container-fluid {
+        position: fixed;
+        top: 90px;
+    }
+
+    #mainchatbereich {
+
+        position: relative;
+        top: 0px;
+        height: 220px; 
+    }
+
+}
+
+@media (max-height: 500px) {
+
+    .container-fluid {
+        position: fixed;
+        top: 90px;
+    }
+
+    #mainchatbereich {
+
+        position: relative;
+        top: 0px;
+        height: 265px; 
+    }
+
+    #errorMessage {
+        position: relative;
+        top: 55px;
+        font-size: 11px;
+    }
+
+}
+
+

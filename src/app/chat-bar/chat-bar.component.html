@@ -1,0 +1,22 @@
+<div id="chatarea">
+    <div class="container">
+
+        <div class="row">
+            <div id="chatbararea">
+                <div class="col-12" (click)="checkNick()">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="textfeld" class="col-10">
+                <textarea id="chatfeld" maxlength="1000" [(ngModel)]="chatText"
+                    placeholder="Schreiben Sie hier Ihren Text." (keyup.enter)="sendChat()"></textarea>
+            </div>
+            <div id="sendebutton" class="col-2">
+                    <button id="senditbutton" type="button" type="submit" name="submit"
+                        value="Absenden" (click)="sendChat()" [disabled]="!chatText">Send</button><br />
+                </div>
+        </div>
+    </div>
+</div>

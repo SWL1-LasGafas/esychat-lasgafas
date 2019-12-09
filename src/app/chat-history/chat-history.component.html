@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <div id="chatarea" class="col-12">
+            <ul class="list-group overflow-auto" id="myForm" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+                <li class="list-group-item" *ngFor="let message of content">
+                    <div class="chatmessage {{message.position}}"><span class="{{message.color}}">{{message.shownick}}</span><span class="tstamp">{{message.date}}</span><br/><span class="chatText">{{message.message}}</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

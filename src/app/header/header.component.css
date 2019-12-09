@@ -1,0 +1,122 @@
+
+.container-fluid {
+    background-color: rgb(200, 65, 40);
+    
+    position: fixed;
+    top: 0px;
+
+    height: 120px;
+    width: 100%;
+
+    border-bottom: 2px solid black;
+}
+
+#logo {
+
+    position: relative;
+    top: 5px;
+    float: left;
+
+    width: 120px;
+    height: 110px;
+}
+
+#headertitle h1 {
+
+    position: relative;
+    top: -12px;
+    float: left;
+
+    color: white;
+    font-size: 95px;
+}
+
+    @media (max-width: 992px) {
+        .container-fluid {            
+            position: fixed;
+            top: 0px;
+
+            height: 120px;
+            width: 100%;
+        }
+
+        #logo {
+
+            position: relative;
+            top: 5px;
+            
+            width: 120px;
+            height: 110px;
+        }
+
+        #headertitle h1 {
+
+            position: fixed;
+            top: -12px;
+            right: 20%;
+
+            font-size: 95px;
+        }
+    }
+
+
+    @media (max-width: 770px) {
+        .container-fluid {            
+            position: fixed;
+            top: 0px;
+
+            height: 100px;
+            width: 100%;
+        }
+
+        #logo {
+
+            position: relative;
+            top: 5px;
+
+            width: 100px;
+            height: 92px;
+        }
+
+        #headertitle h1 {
+
+            position: fixed;
+            top: -15px;
+            right: 15%;
+
+            font-size: 88px;
+        }
+    }
+
+    @media screen and (max-width: 600px), screen and (max-height: 500px) {
+        .container-fluid {
+            
+            position: fixed;
+            top: 0px;
+
+            height: 80px;
+            width: 100%;
+        }
+
+        #logo {
+
+            position: fixed;
+            top: 5px;
+            left: 25px;
+
+            width: 80px;
+            height: 70px;
+        }
+
+        #headertitle h1 {
+
+            position: fixed;
+            top: 0px;
+            right: 60px;
+
+            font-size: 60px;
+        }
+    }
+
+
+
