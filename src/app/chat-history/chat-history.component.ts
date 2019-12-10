@@ -117,7 +117,12 @@ export class ChatHistoryComponent implements DoCheck {
               if (response[i].nickname) { //Keine Systemmeldungen u.ä. mit einpflegen!
                 var dt = new Date();
                 var indx = this.nickList.findIndex(myObj => myObj.name == response[i].nickname); // prüfen, ob es den Nick schon gibt
+                // DEBUG
+                console.log("chat-history: Suchresultat Name in Array: " + indx);
                 if (indx > -1) { // Nickname ist vorhanden. Nur updaten!
+                  console.log("chat-history: " + response[i].nickname + " vorhanden. Updatemodus: ");
+                  // Debug
+                  console.log("chat-history: Zeit Beitrag: " + response[i].date + " Zeit jetzt: " + dt.getTime() + " Differenz: " + (dt.getTime()-response[i].date) + " Aktivzeit: " + this.cService.nickTimeout );
                   if (response[i].date > dt.getTime() - this.cService.nickTimeout) // Neuer als 30 Minuten
                   {
                     console.log('chat-history: Nickname ' + this.nickList[indx].name + ' ist aktiv.');
@@ -132,6 +137,8 @@ export class ChatHistoryComponent implements DoCheck {
                 else { // Noch nicht vorhanden. Objekt erstellen und einfügen
                   this.nickObj = new Nickname(); // Initialisieren
                   this.nickObj.name = response[i].nickname;
+                  // DEBUG
+                  console.log("chat-history: Zeit Beitrag: " + response[i].date + " Zeit jetzt: " + dt.getTime() + " Differenz: " + (dt.getTime()-response[i].date) + " Aktivzeit: " + this.cService.nickTimeout );
                   if (response[i].date > dt.getTime() - this.cService.nickTimeout) // Neuer als 30 Minuten
                   {
                     console.log('chat-history: Nickname ' + this.nickObj.name + ' ist aktiv.');
