@@ -5,38 +5,16 @@
 
 #myForm {
     position: relative;
-
+    box-sizing: border-box;
     color: black;
     background-color: #f8f9fa;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: 430px;
     width: 100%;
-    overflow-y: auto;
+    max-height: 470px;
     overflow-x: scroll;
     color: black;
     border: 2px solid black;
     border-radius: 10px;
-}
-
-@media (max-height: 700px) {
-    #myForm {
-        height: 340px;
-        width: 100%;
-    }
-}
-
-@media (max-height: 615px) {
-    #myForm {
-        height: 260px;
-        width: 100%;
-    }
-}
-
-@media (max-height: 500px) {
-    #myForm {
-        height: 190px;
-        width: 100%;
-    }
 }
 
 /* Chat-Message */
@@ -107,32 +85,11 @@
     color: darkkhaki;
 }
 
-
 .tstamp {
     font-size: 10pt;
     font-family: cursive;
     color: grey;
 }
-
-/*
-
-.left {
-    text-align:left;
-    color: black;
-    background-color: rgba(200, 65, 40, 1);
-    border: 1px solid rgb(200, 65, 40);
-    border-radius: 5px;
-}
-
-.right {
-    text-align:right;
-    color: black;
-    background-color: green;
-    border: 1px solid rgb(200, 65, 40);
-    border-radius: 5px;
-}
-
-*/
 
 .left {
     float: left;
@@ -140,11 +97,13 @@
     background-color: rgba(230, 77, 17, 0.1);
     border: 1px solid black;
     border-radius: 5px;
-    padding-top: 15px;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    padding-top: 5px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 15px;
-    max-width: 60%;
+    padding-bottom: 5px;
+    max-width: 80%;
     min-width: 33%;
     word-wrap:break-word;
 }
@@ -155,11 +114,13 @@
     background-color: rgba(230, 77, 17, 0.5);
     border: 1px solid black;
     border-radius: 5px;
-    padding-top: 15px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding-top: 5px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 15px;
-    max-width: 60%;
+    padding-bottom: 5px;
+    max-width: 80%;
     min-width: 33%;
     word-wrap:break-word;
 }
@@ -167,7 +128,7 @@
 .sysmsg {
     float: left;
     position: relative;
-    left: 30%;
+    left: 25%;
     color: black;
     background-color: lightgray;
     border-radius: 5px;
@@ -175,6 +136,7 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 15px;
+    max-width: 60%;
 }
 
 /* Rote scrollbar */
@@ -198,4 +160,124 @@
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #C84128; 
+  }
+
+  @media (max-width: 400px) {
+    .myNick {
+        margin-right: 20px;
+        text-decoration:bold;
+        font-size: 11pt;
+        color: brown;
+    }
+    .nick1 {
+        margin-right: 20px;
+        text-decoration:bold;
+        font-size: 11pt;
+        color: turquoise;
+    }
+    .nick2 {
+        margin-right: 20px;
+        text-decoration:bold;
+        font-size: 11pt;
+        color:darkblue;
+    }
+    .nick3 {
+        margin-right: 20px;
+        text-decoration:bold;
+        font-size: 11pt;
+        color: violet;
+    }
+    .nick4 {
+        margin-right: 20px;
+        text-decoration:bold;
+        font-size: 11pt;
+        color: skyblue;
+    }
+    .nick5 {
+        margin-right: 20px;
+        text-decoration:bold;
+        font-size: 11pt;
+        color: limegreen;
+    }
+    .nick6 {
+        margin-right: 20px;
+        text-decoration:bold;
+        font-size: 11pt;
+        color: tomato;
+    }
+    .nick7 {
+        margin-right: 20px;
+        text-decoration:bold;
+        font-size: 11pt;
+        color:olive;
+    }
+    .nick8 {
+        margin-right: 50px;
+        text-decoration:bold;
+        font-size: 17pt;
+        color: orange;
+    }
+    .nick9 {
+        margin-right: 20px;
+        text-decoration:bold;
+        font-size: 11pt;
+        color: darkviolet;
+    }
+    .nick0 {
+        margin-right: 20px;
+        text-decoration:bold;
+        font-size: 11pt;
+        color: darkkhaki;
+    }
+    
+    .tstamp {
+        font-size: 5pt;
+        font-family: cursive;
+        color: grey;
+    }
+    
+    .left {
+        float: left;
+        font-size: 9pt;
+        border-radius: 5px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding-top: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 2px;
+        max-width: 80%;
+        min-width: 33%;
+        word-wrap:break-word;
+    }
+    
+    .right {
+        float: right;
+        font-size: 9pt;
+        border-radius: 5px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-top: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 2px;
+        max-width: 80%;
+        min-width: 33%;
+        word-wrap:break-word;
+    }
+    
+    .sysmsg {
+        float: left;
+        position: relative;
+        left: 25%;
+        color: black;
+        font-size: 10pt;
+        background-color: lightgray;
+        border-radius: 5px;
+        padding-top: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 3px;
+        max-width: 60%;
+    }
   }

@@ -77,7 +77,11 @@ export class ChatBarComponent implements OnInit {
         console.log('Start schreiben History...');
         this.chatService.addToHistory(this.chatMsgObj).subscribe( 
           (response: Message) => {
-            console.log('History add: ' + response.message);
+            console.log('History add: ' + response.message + ' Counter: ' + response.counter);
+            // Jetzt kann man mit dem Counter etwas Nützliches anstellen. Ihn an die History-Komponente übergeben, z.B.
+            console.log('Emit Event chatMessageChange: ' + response);
+            // Den Counter rüberzusenden war nicht nützlich, weil sonst der Chat seinen gerade gesendeten Beitrag nicht zurückliest!
+            //this.chatMessageChange.emit(response); // Da der Typ schon auf Message gestellt ist, wird er benutzt. Eigentlich würde eine Nummer reichen
           }
         )
         console.log('Ende schreiben History...');

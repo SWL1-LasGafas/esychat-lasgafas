@@ -19,8 +19,9 @@ export class ChatserverService {
     return this.http.post<Message>(this.actionUrl, message, options);
   }
 
-  public getHistory(): Observable<Message> {
-    return this.http.get<Message>(this.actionUrl);
+  public getHistory(counter: number): Observable<Message> { // counter erlaubt dem Server, die zu sendende Datenmenge zu ermitteln
+    //console.log('getHistory URL: '+this.actionUrl+'?counter='+counter);
+    return this.http.get<Message>(this.actionUrl+'?counter='+counter);
   }
 
 

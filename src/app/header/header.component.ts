@@ -12,15 +12,17 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  /*
+
   titleAnimation() {
     let spans = document.querySelectorAll('.word span');
     spans.forEach((span, idx) => {
-      /*span.addEventListener('click', (e) => {
+      span.addEventListener('click', (e) => {
         e.target.classList.add('active');
       });
       span.addEventListener('animationend', (e) => {
         e.target.classList.remove('active');
-      }); */
+      });
 
       // Initial animation
       setTimeout(() => {
@@ -28,6 +30,7 @@ export class HeaderComponent implements OnInit {
       }, 750 * (idx + 1))
     });
   }
+  */
 
 }
 

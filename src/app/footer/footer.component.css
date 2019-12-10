@@ -6,38 +6,10 @@
     background-color: rgb(200, 65, 40);
     height: 30px;
 
-    border-top: 2px solid black;
+    border-top: 2px solid white;
 }
 
 #footertext {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-
-@media screen and (max-width: 992px), screen and (max-height: 650px) {
-    .container-fluid {
-        position: fixed;
-        bottom: 0px;
-
-        height: 30px;
-    }
-}
-
-@media screen and (max-width: 770px), screen and (max-height: 550px) {
-    .container-fluid {
-        position: fixed;
-        bottom: 0px;
-
-        height: 25px;
-    }
-}
-
-@media screen and (max-width: 600px), screen and (max-height: 460px) {
-    .container-fluid {
-        position: fixed;
-        bottom: 0px;
-
-        height: 25px;
-    }
 }

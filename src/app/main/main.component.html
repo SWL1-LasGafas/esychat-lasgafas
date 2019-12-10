@@ -1,30 +1,25 @@
 <div class="mainarea">
     <div class="chatarea">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div id="mainlinks" class="col-2">
+                <div id="mainlinks" class="col-xs-12 col-sm-3 col-lg-2 col-xl-2">
                     <app-nick-name (nickNameChange)="nickChange($event)"></app-nick-name>
                     <!-- Zwei Events gehen nicht. Nimmt nur das erste. -->
                     <div id="errorMessage">{{errorMsg}}</div>
+                    <div>
+                        <app-nick-list [nickObj]="nickList"></app-nick-list>
+                    </div>
                 </div>
 
-                <div id="mainchatbereich" class="col-9" style="white-space: pre-line">
+                <div id="mainchatbereich" class="col-xs-12 col-sm-9 col-lg-10 col-xl-10" style="white-space: pre-line">
 
                     <span [hidden]="!nickSet">
-                        <app-chat-history [(chatHistory)]="historyText"></app-chat-history>
+                        <app-chat-history [chatHistory]="msgObj" (nickListChange)="nickListSend($event)"></app-chat-history>
                         <app-chat-bar [(chatMessage)]="messageText" (chatMessageChange)="chatMsg($event)">
                         </app-chat-bar>
                     </span>
 
                 </div>
-
-                <!--
-
-                <div id="mainrechts" class="col-2">
-                        <img id="werbung" src="assets/images/werbung_ec.png" alt="Werbung" />
-                </div>
-
-                -->
 
             </div>
         </div>

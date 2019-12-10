@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <div class="nickList">
+            <ul class="list-group overflow-auto" id="nickList" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+                <li class="list-group-item" *ngFor="let nick of activeNicks">
+                    <div class=" "><span class=" ">{{nick}}</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
