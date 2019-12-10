@@ -125,7 +125,7 @@ export class ChatHistoryComponent implements DoCheck {
                   }
                   else {
                     console.log('chat-history: Nickname ' + this.nickList[indx].name + ' ist inaktiv.');
-                    this.nickList[indx].active = true; // Inaktiv setzen
+                    this.nickList[indx].active = false; // Inaktiv setzen
                   }
                   console.log('chat-history: ' + this.nickList[indx].name + ' in Nickliste geändert.');
                 }
