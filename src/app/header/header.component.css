@@ -32,7 +32,7 @@ p {
     font-size: 60pt;
     letter-spacing: 4px;
     overflow: hidden;
-    background: linear-gradient(90deg, rgba(200, 65, 40, 1), black, rgba(200, 65, 40, 1));
+    background: linear-gradient(90deg, rgba(200, 65, 40, 1), white, rgba(200, 65, 40, 1));
     background-repeat: no-repeat;
     background-size: 80%;
     animation: animate 6s linear infinite;
@@ -64,7 +64,7 @@ p {
         max-width: 130px;
         word-wrap: break-word;
         overflow: hidden;
-        background: linear-gradient(90deg, rgba(200, 65, 40, 1), black, rgba(200, 65, 40, 1));
+        background: linear-gradient(90deg, rgba(200, 65, 40, 1), white, rgba(200, 65, 40, 1));
         background-repeat: no-repeat;
         background-size: 80%;
         animation: animate 6s linear infinite;

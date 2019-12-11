@@ -79,7 +79,7 @@ export class MainComponent implements OnInit {
     }
     else {
       console.log('Invalid Nick detected! '+this.pService.nickInvalid);
-      this.errorMsg = 'Nickname ungültig. Bitte auch Buchstaben verwenden! Leerzeichen sind nicht erlaubt! Mindestens 4 Zeichen! Maximal 10 Zeichen!';  // systemMsg geht nicht, weil nicht davon ausgegangen werden kann, dass die chathistory überhaupt schon sichtbar ist.
+      this.errorMsg = 'min. 4 Zeichen max. 10 + Buchstabe ';  // systemMsg geht nicht, weil nicht davon ausgegangen werden kann, dass die chathistory überhaupt schon sichtbar ist.
     }
   }
 

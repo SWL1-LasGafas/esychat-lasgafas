@@ -39,12 +39,6 @@ h1 {
     color: rgba(200, 65, 40, 1);
 }
 
-#chatuser {
-    position: relative;
-    color: black;
-    top: 270px;
-}
-
 @media (max-width: 400px) {
 
     #inputNickname {
