@@ -1,18 +1,18 @@
 <div class="container">
 
-    <div class="row">
-        <div id="chatroom" class="col-12">
-            <h1>Im Chat:</h1>
+        <div class="row">
+            <div id="chatroom" class="col-12">
+                <h1>Im Chat:</h1>
+            </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="nickList">
-            <ul class="list-group overflow-auto" id="nickList" #scrollMe [scrollTop]="scrollMe.scrollHeight">
-                <li class="list-group-item" *ngFor="let nick of activeNicks">
-                    <div class=" "><span class=" ">{{nick}}</span></div>
-                </li>
-            </ul>
+        <div class="row">
+            <div class="nickList">
+                <ul class="list-group overflow-auto" id="nickList" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+                    <li class="list-group-item" *ngFor="let nick of activeNicks">
+                        <div class=" "><span class=" ">{{nick}}</span></div>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
 </div>

@@ -1,15 +1,16 @@
 <div class="container">
 
     <div class="row">
-        <div class="col-12">
-            <input [(ngModel)]="nickName" type="text" id="inputNickname" placeholder="Nickname" minlenght=4 maxlength="10"
-                (keyup.enter)="setNickname()" required />
-        </div>
-        <div class="col-12">
-            <button type="button" id="nickNameButton" class="btn btn-outline-danger" (click)="setNickname()"
-                value="Setzen" [disabled]="!nickName">Setzen</button>
+        <div id="nickArea">
+            <div class="col-12">
+                <input [(ngModel)]="nickName" type="text" id="inputNickname" placeholder="Nickname" minlenght=4
+                    maxlength="10" (keyup.enter)="setNickname()" required />
+            </div>
+            <div class="col-12">
+                <button type="button" id="nickNameButton" (click)="setNickname()" value="Setzen" [disabled]="!nickName">Setzen</button>
+            </div>
         </div>
     </div>
 
-    
+
 </div>

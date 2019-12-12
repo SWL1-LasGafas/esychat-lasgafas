@@ -19,25 +19,28 @@
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(200, 65, 40, 1);
-    border-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 
 }
 
 #mainlinks {
     position: relative;
     box-sizing: border-box;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: rgba(200, 65, 40, 1);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;    
 }
 
 #errorMessage {
     position: fixed;
-    top: 155px;
-    left: 20px;
-    max-width: 120px;
-    color: rgba(200, 65, 40, 1);
+    top: 240px;
+    left: 115px;
+    max-width: 100px;
+    color: white;
     font-size: 12px;
     word-wrap: break-word;
 }
@@ -81,10 +84,19 @@
 }
 
 @media (max-width: 400px) {
+
+    #mainlinks {
+        position: relative;
+        box-sizing: border-box;
+        color: white;
+        background-color: white;    
+        font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    }
+
     #mainchatbereich {
         position: relative;
         box-sizing: border-box;
-        top: 80px;
+        top: 40px;
         width: 100%;
         height: 560px;
         max-height: 600px;    
