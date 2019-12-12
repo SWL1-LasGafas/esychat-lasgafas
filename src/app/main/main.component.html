@@ -13,7 +13,7 @@
 
                 <div id="mainchatbereich" class="col-xs-12 col-sm-9 col-lg-10 col-xl-10" style="white-space: pre-line">
 
-                    <span [hidden]="!nickSet">
+                    <span>
                         <app-chat-history [chatHistory]="msgObj" (nickListChange)="nickListSend($event)"></app-chat-history>
                         <app-chat-bar [(chatMessage)]="messageText" (chatMessageChange)="chatMsg($event)">
                         </app-chat-bar>
@@ -22,6 +22,11 @@
                 </div>
 
             </div>
+            <div class="row">
+                    <div id="footertext" class="col-12">
+                            &nbsp;
+                    </div>
+                </div>
         </div>
 
     </div>

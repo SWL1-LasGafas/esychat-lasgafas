@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Nickname } from '../nickname'
 import { NicklistService } from '../nicklist.service';
+import { ConfigurationService } from '../configuration.service';
 import { stringify } from 'querystring'; // Wohl jetzt überflüssig, weil nicht mehr mit <string> gearbeitet wird
 
 
@@ -11,7 +12,7 @@ import { stringify } from 'querystring'; // Wohl jetzt überflüssig, weil nicht
 })
 export class NickListComponent implements OnInit {
 
-  constructor(public nService: NicklistService) { }
+  constructor(public nService: NicklistService, public cService: ConfigurationService) { }
 
   activeNicks: String[] = [];
   activeNicksArray: Nickname[] = [];
@@ -19,7 +20,7 @@ export class NickListComponent implements OnInit {
   ngOnInit() {
     setInterval(() => {
       this.updateNicks();
-    }, 5000); // Polling
+    }, this.cService.historyPolling); // Polling. Gleicher Wert wie chat-history
   }
 
   updateNicks()

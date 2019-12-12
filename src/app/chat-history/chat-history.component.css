@@ -10,6 +10,7 @@
     background-color: #f8f9fa;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
+    min-height: 470px;
     max-height: 470px;
     overflow-x: scroll;
     color: black;
@@ -162,7 +163,55 @@
     background: #C84128; 
   }
 
-  @media (max-width: 400px) {
+  @media (min-height: 800px) {
+
+    #myForm {
+        position: relative;
+        box-sizing: border-box;
+        color: black;
+        background-color: #f8f9fa;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 100%;
+        max-height: 600px;
+        overflow-x: scroll;
+        color: black;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+}
+
+@media (min-height: 1000px) {
+
+    #myForm {
+        position: relative;
+        box-sizing: border-box;
+        color: black;
+        background-color: #f8f9fa;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 100%;
+        max-height: 730px;
+        overflow-x: scroll;
+        color: black;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    #myForm {
+        position: relative;
+        box-sizing: border-box;
+        color: black;
+        background-color: #f8f9fa;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 100%;
+        max-height: 450px;
+        overflow-x: scroll;
+        color: black;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
     .myNick {
         margin-right: 20px;
         text-decoration:bold;
@@ -280,4 +329,4 @@
         padding-bottom: 3px;
         max-width: 60%;
     }
-  }
+}

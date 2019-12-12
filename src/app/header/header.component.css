@@ -1,6 +1,8 @@
 
-.container-fluid {    
-    position: relative;
+.header {    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
     height: 120px;
     width: 100%;
     margin: 0;
@@ -10,15 +12,15 @@
     align-items: center;
     background-color: rgba(200, 65, 40, 1);
     border-bottom: 2px solid white;
+    z-index: 1;
 }
 
 #logo {
-
-    position: fixed;
-    top: 5px;
-    left: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    left: 15px;
     float: left;
-
     width: 120px;
     height: 110px;
 }
