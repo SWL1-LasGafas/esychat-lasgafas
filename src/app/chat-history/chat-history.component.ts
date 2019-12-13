@@ -33,7 +33,7 @@ export class ChatHistoryComponent implements DoCheck {
   nickName: string = "";
   color: string;
   public hashlist: string[] = [];
-  msgCounter:number = 0; // Ungefährer Stand des Messagecounters. Könnte auch durch Durchzählen des lokalen Arrays ermittelt werden, aber wird jetzt mal durch chat-bar beim Speichern übergeben.
+  msgCounter:number = 0; // Ungefährer Stand des Messagecounters. Wird aus den heruntergeladenen Messages ermittelt.
 
   // Nickname Objekte zusammenbauen
   nickObj:Nickname = new Nickname(); // Einzelnes Objekt

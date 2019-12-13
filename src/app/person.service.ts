@@ -10,7 +10,7 @@ export class PersonService {
   myNickname:string = '';
   myOldNickname:string = '';
   nickInvalid:number = 0;
-  nicknameColor:string = '';
+  nicknameColor:string = ''; // Nicht klar, ob auch benutzt
 
   public getNickname(): string {
     return this.myNickname;

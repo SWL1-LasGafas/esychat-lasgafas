@@ -36,9 +36,9 @@
 }
 
 #errorMessage {
-    position: fixed;
-    top: 240px;
-    left: 115px;
+    position: relative;
+    top: -10px;
+    left: 20%;
     max-width: 100px;
     color: white;
     font-size: 12px;

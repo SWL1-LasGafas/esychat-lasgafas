@@ -85,6 +85,7 @@ export class NickNameComponent implements OnInit {
 
   }
 
+  // Diese Funktion und was damit zusammenhängt ist nicht mehr aktuell. Wird in chat-history gemanaged mit einem Array aus CSS-Klassen
   getRandomColor() {
     var letters = '0123456789ABCDEF';
     var color = '#';
